@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="hello_world">Hello Nono!</string>
+    <string name="textview1">System Online</string>
+    <string name="button1">Quit</string>
+    <string name="alerte">Alerte!</string>
+</resources>
