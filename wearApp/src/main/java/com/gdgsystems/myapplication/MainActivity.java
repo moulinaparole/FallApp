@@ -158,9 +158,7 @@ public class MainActivity extends WearableActivity implements SensorEventListene
         yAccel = yNewAccel;
         zAccel = zNewAccel;
     }
-    public void clickCall(View view){
 
-    }
 
 
     public void onSensorChanged(SensorEvent event){

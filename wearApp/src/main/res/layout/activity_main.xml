@@ -27,14 +27,13 @@
         android:paddingRight="90dp"
         android:paddingBottom="30dp"
         android:paddingTop="20dp"
-        android:onClick="callClick" />
+        android:longClickable="true"/>
 
     <Button
         android:id="@+id/settingButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="top|center"
-        android:onClick="callClick"
         android:paddingBottom="25dp"
         android:paddingLeft="70dp"
         android:paddingRight="70dp"

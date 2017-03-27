@@ -2,34 +2,64 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_weight="0.66"
+        android:orientation="vertical"
+        android:weightSum="2">
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_weight="0.75"
+            android:orientation="horizontal"
+            android:weightSum="1">
 
             <Button
-                android:layout_width="wrap_content"
+                android:id="@+id/nurseAlertBut"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Alert the \nNurse"
-                android:paddingBottom="70dp"
-                android:paddingTop="100dp"
-                android:paddingRight="20dp"/>
+                android:layout_weight="1.25"
+                android:paddingBottom="60dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="0dp"
+                android:paddingTop="80dp"
+                android:text="Alert the \nNurse" />
+
             <Button
+                android:id="@+id/amFineBut"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="I am fine"
+                android:layout_gravity="fill_horizontal"
+                android:elevation="1dp"
+                android:paddingBottom="60dp"
                 android:paddingLeft="20dp"
-                android:paddingRight="30dp"
-                android:paddingBottom="70dp"
-                android:paddingTop="100dp"/>/>
+                android:paddingRight="60dp"
+                android:paddingTop="80dp"
+                android:text="I am \nfine"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                tools:textScaleX="1.4" /><![CDATA[
+
+
+
+            />
+
+        ]]>
         </LinearLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/countDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="100"
+        tools:textAlignment="center" />
 
     <ProgressBar
         android:id="@+id/progressBar2"
@@ -38,10 +68,4 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp" />
 
-    <TextView
-        android:id="@+id/countDown"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="100"
-        tools:textAlignment="center" />
 </LinearLayout>
