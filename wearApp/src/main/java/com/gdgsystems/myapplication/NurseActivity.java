@@ -6,14 +6,13 @@ import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.wearable.activity.WearableActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 /**
  * Created by Julien on 2017-03-27.
  */
 
-public class ResolveActivity extends WearableActivity{
+public class NurseActivity extends WearableActivity{
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
@@ -36,7 +35,7 @@ public class ResolveActivity extends WearableActivity{
                     MainActivity.vib.vibrate(300);
                 }
 
-                Intent clicky = new Intent(ResolveActivity.this,MainActivity.class);
+                Intent clicky = new Intent(NurseActivity.this,MainActivity.class);
                 startActivity(clicky);
             }
         });

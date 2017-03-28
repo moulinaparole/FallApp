@@ -22,7 +22,8 @@
         </activity>
 
         <activity android:name=".AlertActivity"/>
-        <activity android:name=".ResolveActivity"/>
+        <activity android:name=".NurseActivity"/>
+        <activity android:name=".NotNurseActivity"/>
         <activity android:name=".SettingsActivity"/>
     </application>
 
